@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import { useParams } from "react-router";
 import type { TipoProduto } from "../../Types/types";
 
 
 export default function EditarProduto() {
   document.title = "Editar Produto";
-
-  const navigate = useNavigate();
 
   const { id } = useParams<{id:string}>();
 
